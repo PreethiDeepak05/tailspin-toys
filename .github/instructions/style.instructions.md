@@ -40,6 +40,14 @@ ALL UI components MUST use dark theme colors:
 - Mobile-first approach
 - Ensure readability on all screen sizes
 
+## TypeScript and Commenting Conventions
+
+- Use TypeScript with explicit parameter and return types for exported functions and shared helpers.
+- Prefer small, well-named interfaces for object shapes over loose inline types or `any`.
+- Keep formatting consistent: single quotes for strings, semicolons, trailing commas in multiline objects and arrays, and line lengths that stay readable without creating awkward wrapping.
+- ESLint is the source of truth for formatting and quality checks. If a rule is enforced by ESLint, follow it even when the code is otherwise valid.
+- Apply the same comment philosophy across the repo: explain intent, rationale, and constraints, not the mechanics of the code itself.
+
 ## Utility Classes
 
 - Prefer utility classes over custom CSS when possible
